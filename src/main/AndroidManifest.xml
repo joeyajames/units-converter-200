@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="missioncollege.cis063.unitsconverter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.AreaConvert"
+            android:label="@string/title_activity_area_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.CurrencyConvert"
+            android:label="@string/title_activity_currency_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.LengthConvert"
+            android:label="@string/title_activity_length_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.VolumeConvert"
+            android:label="@string/title_activity_volume_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.WeightConvert"
+            android:label="@string/title_activity_weight_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.AnglesConvert"
+            android:label="@string/title_activity_angles_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.GasMileage"
+            android:label="@string/title_activity_gas_mileage" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.TemperatureConvert"
+            android:label="@string/title_activity_temperature_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.SpeedConvert"
+            android:label="@string/title_activity_speed_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.NumbersConvert"
+            android:label="@string/title_activity_numbers_convert" >
+        </activity>
+        <activity
+            android:name="missioncollege.cis063.unitsconverter.Calculator"
+            android:label="@string/title_activity_calculator" >
+        </activity>
+    </application>
+
+</manifest>

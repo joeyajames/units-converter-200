@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Units Converter</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_convert">Units Converter</string>
+    <string name="title_activity_length_convert">Convert Length</string>
+    <string name="title_activity_area_convert">Area</string>
+    <string name="prompt_txtNumberFormat">Number Format</string>
+
+    <string-array name="areaUnits">
+        <item>Square Inches</item>
+        <item>Square Feet</item>
+        <item>Square Miles</item>
+        <item>Square Millimeters</item>
+        <item>Square Meters</item>
+        <item>Square Kilometers</item>
+        <item>Acres</item>
+        <item>Hectares</item>
+        <item>Ping</item>
+    </string-array>
+    <string-array name="lengthUnits">
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Miles</item>
+        <item>Millimeters</item>
+        <item>Centimeters</item>
+        <item>Meters</item>
+        <item>Kilometers</item>
+        <item>Nautical Miles</item>
+    </string-array>
+    <string-array name="anglesUnits">
+        <item>Degrees</item>
+        <item>Radians</item>
+    </string-array>
+    <string-array name="gasUnits">
+        <item>Miles per Gallon</item>
+        <item>Kilometers per Liter</item>
+    </string-array>
+    <string-array name="speedUnits">
+        <item>Inches per Second</item>
+        <item>Feet per Second</item>
+        <item>Miles per Hour</item>
+        <item>Centimeters per Second</item>
+        <item>Meters per Second</item>
+        <item>Kilometers per Hour</item>
+        <item>Knots</item>
+        <item>Mach</item>
+    </string-array>
+    <string-array name="weightUnits">
+        <item>Ounces</item>
+        <item>Pounds</item>
+        <item>Tons</item>
+        <item>Grams</item>
+        <item>Kilograms</item>
+        <item>Metric Tons</item>
+        <item>Grains</item>
+        <item>Drams</item>
+    </string-array>
+    <string-array name="NumberFormats">
+        <item>Decimal (Base 10)</item>
+        <item>Binary (Base 2)</item>
+        <item>Octal (Base 8)</item>
+        <item>Hexadecimal (Base 16)</item>
+        <item>Roman Numeral (Max 3999)</item>
+    </string-array>
+    <string-array name="tempUnits">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="volumeUnits">
+        <item>Ounces</item>
+        <item>Pints</item>
+        <item>Quarts</item>
+        <item>Gallons</item>
+        <item>Cubic Feet</item>
+        <item>Milliliters</item>
+        <item>Centiliters (cc)</item>
+        <item>Liters</item>
+        <item>Cubic Meters</item>
+    </string-array>
+    <string-array name="currencyUnits">
+        <item>US Dollars</item>
+        <item>Euros</item>
+        <item>British Pounds</item>
+        <item>Japanese Yen</item>
+        <item>Canadian Dollars</item>
+        <item>Chinese Yuan</item>
+        <item>Australian Dollars</item>
+        <item>Mexican Pesos</item>
+    </string-array>
+
+    <string name="title_activity_angles_convert">Angles</string>
+    <string name="title_activity_gas_mileage_convert">Gas Mileage</string>
+    <string name="title_activity_speed_convert">Speed</string>
+    <string name="title_activity_weight_convert">Weight</string>
+    <string name="title_activity_numbers_convert">Numbers</string>
+    <string name="title_activity_temperature_convert">Temperature</string>
+    <string name="title_activity_currency_convert">Currency</string>
+    <string name="title_activity_volume_convert">Volume</string>
+    <string name="title_activity_gas_mileage">Gas Mileage</string>
+    <string name="title_decimal">Decimal (Base 10)</string>
+    <string name="title_binary">Binary (Base 2)</string>
+    <string name="title_octal">Octal (Base 8)</string>
+    <string name="title_hex">Hexadecimal (Base 16)</string>
+    <string name="title_roman">Roman Numeral</string>
+    <string name="title_activity_calculator">Calculator</string>
+
+</resources>

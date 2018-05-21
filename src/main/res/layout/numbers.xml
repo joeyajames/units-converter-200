@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NumbersConvert" >
+    
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Number Systems"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0072bc"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/txtNumber"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:inputType="text" >
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spnNumbers"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtNumber"
+        android:entries="@array/NumberFormats"
+        android:prompt="@string/prompt_txtNumberFormat" />
+
+    <TextView
+        android:id="@+id/txtVDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgSpacerNumbers"
+        android:layout_below="@+id/spnNumbers"
+        android:text="@string/title_decimal" />
+
+    <TextView
+        android:id="@+id/txtVBi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgSpacerNumbers"
+        android:layout_below="@+id/txtVDec"
+        android:text="@string/title_binary" />
+
+    <TextView
+        android:id="@+id/txtVOct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgSpacerNumbers"
+        android:layout_below="@+id/txtVBi"
+        android:text="@string/title_octal" />
+
+    <TextView
+        android:id="@+id/txtVHex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgSpacerNumbers"
+        android:layout_below="@+id/txtVOct"
+        android:text="Hexadecimal(16)" />
+
+    <TextView
+        android:id="@+id/txtVRoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgSpacerNumbers"
+        android:layout_below="@+id/txtVHex"
+        android:text="@string/title_roman" />
+
+    <TextView
+        android:id="@+id/txtHex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOct"
+        android:layout_toLeftOf="@+id/imgSpacerNumbers"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtOct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBi"
+        android:layout_toLeftOf="@+id/imgSpacerNumbers"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtBi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDec"
+        android:layout_toLeftOf="@+id/imgSpacerNumbers"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnNumbers"
+        android:layout_toLeftOf="@+id/imgSpacerNumbers"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/imgSpacerNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spnNumbers"
+        android:src="@drawable/spacer3" />
+
+    <TextView
+        android:id="@+id/txtRoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHex"
+        android:layout_toLeftOf="@+id/imgSpacerNumbers"
+        android:text="0" />
+    <ImageView
+        android:id="@+id/imgIconNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgSpacerNumbers"
+        android:src="@drawable/ic_icon_numbers" />
+
+</RelativeLayout>

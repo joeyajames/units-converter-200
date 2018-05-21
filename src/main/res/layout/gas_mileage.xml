@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GasMileage" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="GasMileage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0072bc"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editGasMileage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+		android:textSize="24sp"
+        android:inputType="numberDecimal" >
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spnGasMileage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editGasMileage"
+        android:entries="@array/gasUnits" />
+
+    <ImageView
+        android:id="@+id/imgSpacerGasMileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spnGasMileage"
+        android:src="@drawable/spacer3" />
+	<ImageView
+        android:id="@+id/imgIconGasMileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgSpacerGasMileage"
+        android:src="@drawable/ic_icon_gas" />
+
+	<TextView
+	    android:id="@+id/txtValueGasMileage0"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerGasMileage"
+	    android:layout_alignTop="@+id/imgSpacerGasMileage"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsGasMileage0"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerGasMileage"
+	    android:layout_alignTop="@+id/imgSpacerGasMileage"
+	    android:text="Miles per Gallon" />
+	<TextView
+	    android:id="@+id/txtValueGasMileage1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerGasMileage"
+	    android:layout_below="@+id/txtValueGasMileage0"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsGasMileage1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerGasMileage"
+	    android:layout_below="@+id/txtUnitsGasMileage0"
+	    android:text="Kilometers per Liter" />
+
+</RelativeLayout>

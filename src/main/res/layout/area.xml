@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AreaConvert" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Area"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0072bc"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editArea"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+		android:textSize="24sp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spnArea"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editArea"
+        android:entries="@array/areaUnits" />
+
+    <ImageView
+        android:id="@+id/imgSpacerArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spnArea"
+        android:src="@drawable/spacer3" />
+	<ImageView
+        android:id="@+id/imgIconArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgSpacerArea"
+        android:src="@drawable/ic_icon_area" />
+
+	<TextView
+	    android:id="@+id/txtValueAre0"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_alignTop="@+id/imgSpacerArea"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre0"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_alignTop="@+id/imgSpacerArea"
+	    android:text="Sq.Inches" />
+	<TextView
+	    android:id="@+id/txtValueAre1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre0"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre0"
+	    android:text="Sq.Feet" />
+	<TextView
+	    android:id="@+id/txtValueAre2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre1"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre1"
+	    android:text="Sq.Miles" />
+	
+	<TextView
+	    android:id="@+id/txtValueAre3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre2"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre2"
+	    android:text="Sq.Millimeters" />
+	<TextView
+	    android:id="@+id/txtValueAre4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre3"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre3"
+	    android:text="Sq.Meters" />
+	<TextView
+	    android:id="@+id/txtValueAre5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre4"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre4"
+	    android:text="Sq.Kilometers" />
+	<TextView
+	    android:id="@+id/txtValueAre6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre5"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre5"
+	    android:text="Acres" />
+	<TextView
+	    android:id="@+id/txtValueAre7"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre6"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre7"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre6"
+	    android:text="Hectares" />
+	<TextView
+	    android:id="@+id/txtValueAre8"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtValueAre7"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsAre8"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerArea"
+	    android:layout_below="@+id/txtUnitsAre7"
+	    android:text="Ping" />
+
+</RelativeLayout>

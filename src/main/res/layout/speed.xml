@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SpeedConvert" >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Speed"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0072bc"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editSpeed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView6"
+        android:ems="10"
+		android:textSize="24sp"
+        android:inputType="numberDecimal" >
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spnSpeed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editSpeed"
+        android:entries="@array/speedUnits" />
+
+    <ImageView
+        android:id="@+id/imgSpacerSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spnSpeed"
+        android:src="@drawable/spacer3" />
+	<ImageView
+        android:id="@+id/imgIconSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgSpacerSpeed"
+        android:src="@drawable/ic_icon_speed" />
+
+	<TextView
+	    android:id="@+id/txtValueSpeed0"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_alignTop="@+id/imgSpacerSpeed"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed0"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_alignTop="@+id/imgSpacerSpeed"
+	    android:text="Inches per Sec" />
+	<TextView
+	    android:id="@+id/txtValueSpeed1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtValueSpeed0"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtUnitsSpeed0"
+	    android:text="Feet per Sec" />
+	<TextView
+	    android:id="@+id/txtValueSpeed2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtValueSpeed1"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtUnitsSpeed1"
+	    android:text="Miles per Hour" />
+	
+	<TextView
+	    android:id="@+id/txtValueSpeed3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtValueSpeed2"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtUnitsSpeed2"
+	    android:text="Centimeters per Sec" />
+	<TextView
+	    android:id="@+id/txtValueSpeed4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtValueSpeed3"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtUnitsSpeed3"
+	    android:text="Meters per Sec" />
+	<TextView
+	    android:id="@+id/txtValueSpeed5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtValueSpeed4"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtUnitsSpeed4"
+	    android:text="Kilometers per Hour" />
+	<TextView
+	    android:id="@+id/txtValueSpeed6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtValueSpeed5"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtUnitsSpeed5"
+	    android:text="Knots" />
+	<TextView
+	    android:id="@+id/txtValueSpeed7"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtValueSpeed6"
+	    android:text="0" />
+	<TextView
+	    android:id="@+id/txtUnitsSpeed7"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imgSpacerSpeed"
+	    android:layout_below="@+id/txtUnitsSpeed6"
+	    android:text="Mach" />
+
+</RelativeLayout>
